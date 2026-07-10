@@ -1,0 +1,18 @@
+# Netlify Configuration File
+# Designed for production-grade hosting of the Secure P2P client-side application
+
+[build]
+  # The command to execute to build the client application
+  command = "npm run build"
+  
+  # The output directory that Netlify will serve statically
+  publish = "dist"
+
+# Redirect rule to support Single Page Application (SPA) client-side routing
+# This maps all inbound routes directly back to index.html, allowing React
+# to handle path-based routing seamlessly without 404 errors.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false

@@ -1,0 +1,6 @@
+{
+  "name": "Secure P2P Share",
+  "description": "Secure, ephemeral, end-to-end encrypted peer-to-peer file and text sharing using WebRTC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
